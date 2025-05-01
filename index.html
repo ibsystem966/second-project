@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Book</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+        <h1 class="text-2xl font-bold text-center mb-4">Contact Book</h1>
+        
+        <!-- Contact Form -->
+        <div class="mb-4">
+            <input type="text" id="name" placeholder="Name" class="w-full p-2 mb-2 border rounded">
+            <input type="tel" id="phone" placeholder="Phone" class="w-full p-2 mb-2 border rounded">
+            <input type="email" id="email" placeholder="Email" class="w-full p-2 mb-2 border rounded">
+            <button onclick="addContact()" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Add Contact</button>
+        </div>
+
+        <!-- Contact List -->
+        <ul id="contactList" class="divide-y divide-gray-200"></ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
